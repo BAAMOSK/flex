@@ -13,26 +13,35 @@ body {
     margin: 0 auto;
 }
 
-.flex-container {
-    display: flex;
-    background: white;
-    flex-wrap: wrap;
+nav {
+    background: gray;
 }
 
-.box {
-    height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.one {
-    background: red;
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 10px;
+    background-color: black;
 }
 
-.two {
-    background: blue;
+nav a:hover {
+    background: #555;
+    color: black;
 }
 
-.three {
-    background: green;
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    nav li {
+        flex: 1 1 0;
+    }
 }
